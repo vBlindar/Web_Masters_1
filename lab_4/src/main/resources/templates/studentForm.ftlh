@@ -13,19 +13,20 @@
     <form action="/student" method="POST" class="mt-3">
         <div class="form-group">
             <label for="name">Имя</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required>
         </div>
         <div class="form-group">
             <label for="speciality">Специальность</label>
-            <input type="text" class="form-control" id="speciality" name="speciality" placeholder="Введите специальность">
+            <input type="text" class="form-control" id="speciality" name="speciality" placeholder="Введите
+            специальность" required>
         </div>
         <div class="form-group">
             <label for="group">Группа</label>
-            <input type="text" class="form-control" id="group" name="group" placeholder="Введите группу">
+            <input type="text" class="form-control" id="group" name="group" placeholder="Введите группу" required>
         </div>
         <div class="form-group">
             <label for="speciality">Курс</label>
-            <input type="number" min="1" class="form-control" id="course" name="course" placeholder="Введите курс">
+            <input type="number" min="1" class="form-control" id="course" name="course" placeholder="Введите курс" required>
         </div>
         <button type="submit" class="btn btn-primary">Отправить</button>
     </form>

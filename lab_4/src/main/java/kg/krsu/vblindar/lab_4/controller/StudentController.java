@@ -46,10 +46,10 @@ public class StudentController {
         studentService.delete(id);
         var students = studentService.findAll();
         model.addAttribute("students",students);
-        return "redirect:/student/all";
+        return "redirect:/student";
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public String allStudents(Model model){
         var students = studentService.findAll();
         model.addAttribute("students",students);
